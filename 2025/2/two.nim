@@ -71,5 +71,4 @@ for pair in ranges:
             if n notin repetidos:
                 repetidos.add(n)
                 suma += n
-echo "4174379265"
 echo suma
