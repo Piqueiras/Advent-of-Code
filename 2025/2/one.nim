@@ -25,11 +25,11 @@ func repetidosEntre(a, b: int): seq[int] =
             let b1 = b div m
             let b2 = b mod m
 
-            if a1>a2:
+            if a1 >= a2 and (a1 != b1 or b2 >= a1):
                 result.add(a1*m + a1)
             for i in (a1+1)..(b1-1):
                 result.add(i*m + i)
-            if b1<b2 and b1!=a1:
+            if b1<=b2 and b1!=a1:
                 result.add(b1*m + b1)
 
     else:
