@@ -105,8 +105,8 @@ for i in 1..<(SIZE-1):
         coords.add((i, 0))
 
 #Interior
-for i in 2..<(SIZE-2):
-    for j in 2..<(SIZE-2):
+for i in 1..<(SIZE-1):
+    for j in 1..<(SIZE-1):
         if not papers[i][j]:
             continue
         var count = 0
@@ -132,4 +132,5 @@ for i in 0..<SIZE:
         else:
             stdout.write "."
     stdout.write "\n"
-echo coords.len
+
+echo suma
